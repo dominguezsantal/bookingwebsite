@@ -3,7 +3,6 @@ $(document) .ready(function(){
     var nameInput = $("input#name").val();
     var addressInput = $("input#address").val();
     var zipcodeInput = $("input#zipcode").val();
-
     $(".name").text("nameInput");
     $(".address").text("addressInput");
     $(".zipcode").text("zipcodeInput");
@@ -12,5 +11,10 @@ $(document) .ready(function(){
     $("#reciept").show();
 
   event.preventDefault();
+    });
   });
-});
+  $(document).ready(function(){
+    $("table").click(function(){
+      alert ("The calendar was clicked.");
+    });
+  });
